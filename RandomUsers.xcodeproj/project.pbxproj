@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045E97C928C2F52600E29B13 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 045E97C828C2F52600E29B13 /* randomUsers.json */; };
 		04AE861A28C1649D00320E32 /* RandomUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE861928C1649D00320E32 /* RandomUsersApp.swift */; };
-		04AE861C28C1649D00320E32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE861B28C1649D00320E32 /* ContentView.swift */; };
+		04AE861C28C1649D00320E32 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE861B28C1649D00320E32 /* UsersView.swift */; };
 		04AE861E28C1649F00320E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AE861D28C1649F00320E32 /* Assets.xcassets */; };
 		04AE862128C1649F00320E32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AE862028C1649F00320E32 /* Preview Assets.xcassets */; };
 		04AE862B28C164A000320E32 /* RandomUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE862A28C164A000320E32 /* RandomUsersTests.swift */; };
 		04AE863528C164A000320E32 /* RandomUsersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE863428C164A000320E32 /* RandomUsersUITests.swift */; };
 		04AE863728C164A000320E32 /* RandomUsersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE863628C164A000320E32 /* RandomUsersUITestsLaunchTests.swift */; };
+		04AE864428C1653D00320E32 /* UserFetchingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE864328C1653D00320E32 /* UserFetchingClient.swift */; };
+		04AE864628C169D700320E32 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE864528C169D700320E32 /* UserData.swift */; };
+		04AE864828C172AC00320E32 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE864728C172AC00320E32 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045E97C828C2F52600E29B13 /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
 		04AE861628C1649D00320E32 /* RandomUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AE861928C1649D00320E32 /* RandomUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersApp.swift; sourceTree = "<group>"; };
-		04AE861B28C1649D00320E32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04AE861B28C1649D00320E32 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		04AE861D28C1649F00320E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AE862028C1649F00320E32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04AE862628C164A000320E32 /* RandomUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,9 @@
 		04AE863028C164A000320E32 /* RandomUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AE863428C164A000320E32 /* RandomUsersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersUITests.swift; sourceTree = "<group>"; };
 		04AE863628C164A000320E32 /* RandomUsersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04AE864328C1653D00320E32 /* UserFetchingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchingClient.swift; sourceTree = "<group>"; };
+		04AE864528C169D700320E32 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		04AE864728C172AC00320E32 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 		04AE860D28C1649D00320E32 = {
 			isa = PBXGroup;
 			children = (
+				045E97C828C2F52600E29B13 /* randomUsers.json */,
 				04AE861828C1649D00320E32 /* RandomUsers */,
 				04AE862928C164A000320E32 /* RandomUsersTests */,
 				04AE863328C164A000320E32 /* RandomUsersUITests */,
@@ -95,7 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				04AE861928C1649D00320E32 /* RandomUsersApp.swift */,
-				04AE861B28C1649D00320E32 /* ContentView.swift */,
+				04AE861B28C1649D00320E32 /* UsersView.swift */,
+				04AE864328C1653D00320E32 /* UserFetchingClient.swift */,
+				04AE864728C172AC00320E32 /* User.swift */,
+				04AE864528C169D700320E32 /* UserData.swift */,
 				04AE861D28C1649F00320E32 /* Assets.xcassets */,
 				04AE861F28C1649F00320E32 /* Preview Content */,
 			);
@@ -233,6 +245,7 @@
 			files = (
 				04AE862128C1649F00320E32 /* Preview Assets.xcassets in Resources */,
 				04AE861E28C1649F00320E32 /* Assets.xcassets in Resources */,
+				045E97C928C2F52600E29B13 /* randomUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AE861C28C1649D00320E32 /* ContentView.swift in Sources */,
+				04AE861C28C1649D00320E32 /* UsersView.swift in Sources */,
 				04AE861A28C1649D00320E32 /* RandomUsersApp.swift in Sources */,
+				04AE864628C169D700320E32 /* UserData.swift in Sources */,
+				04AE864828C172AC00320E32 /* User.swift in Sources */,
+				04AE864428C1653D00320E32 /* UserFetchingClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

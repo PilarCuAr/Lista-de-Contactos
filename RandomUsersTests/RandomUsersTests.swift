@@ -5,7 +5,7 @@
 //  Created by MAC on 01/09/22.
 //
 
-import XCTest
+/*import XCTest
 @testable import RandomUsers
 
 class RandomUsersTests: XCTestCase {
@@ -34,3 +34,41 @@ class RandomUsersTests: XCTestCase {
     }
 
 }
+*/
+
+//Cambiando estas pruebas personalizandolo
+
+import XCTest
+@testable import RandomUsers
+
+class RandomUsersTests: XCTestCase {
+    
+    //Cree una función. Al lado de la función, cree una variable jsonData que recupere los datos de muestra utilizando la función getTestJSONData().
+
+    func testUserModel() throws {
+        let jsonData = getTestJSONData()
+     
+        do {
+         _ = try JSONDecoder().decode(Response.self, from: jsonData)
+            
+            //En lugar de decodificar en la estructura de Response, intente decodificar en la estructura de User.
+
+            /*_ = try JSONDecoder().decode(User.self, from: jsonData) */
+        }
+        catch {
+          XCTFail("Failed to decode JSON into the model: \(error)")
+        }
+      }
+    
+    
+  private func getTestJSONData() -> Data {
+    guard let path = Bundle.main.path(forResource: "randomUsers",
+                                      ofType: "json") else {
+      fatalError("randomUsers.json file not found")
+    }
+    let internalURL = URL(fileURLWithPath: path)
+    return try! Data(contentsOf: internalURL)
+  }
+}
+
+//Creando una función para probar que la decodificación de los datos de muestra en una respuesta funciona correctamente.

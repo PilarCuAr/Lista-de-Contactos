@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-@main
-struct RandomUsersApp: App {
+
+@main struct RandomUsersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UsersView()
         }
     }
 }
